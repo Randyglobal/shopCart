@@ -1,0 +1,80 @@
+.container{
+    width: 90%;
+    height: 70vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    margin: 2% auto;
+    font-size: 17px;
+
+    .content{
+        width: 75%;
+        height: inherit;
+        // background: yellow;
+        display: flex;
+        justify-content: space-evenly;
+        .context{
+            width: 200px;
+            height: 220px;
+            background: white;
+            box-shadow: 1px 1px 4px gray;
+            margin-top: 10px;
+            text-align: justify;
+            border-radius: 10px;
+
+            .name-tag{
+                padding-top: 30px;
+            }
+            p{
+                padding-left: 20px;
+            }
+            // button{
+            //     margin-left: 30px;
+            // }
+        }
+    }
+    .clear{
+        padding: 8px;
+        font-size: 17px;
+        background: rgb(0, 162, 255);
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    .summary{
+        width: 25%;
+        margin-left: -10rem;
+        // background: green;
+        h1{
+            padding-top: 80px;
+        }
+    }
+}
+.popup{
+    top: 30%;
+    left: 30%;
+    position: absolute;
+    width: 30%;
+    height: 25vh;
+    background: rgb(255, 255, 255);
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+    h1{
+        text-align: center;
+
+    }
+    .button{
+        button{
+            padding: 8px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-left: 20%;
+            cursor: pointer;
+        }
+    }
+}

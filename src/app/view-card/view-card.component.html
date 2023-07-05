@@ -1,0 +1,44 @@
+<app-nav-bar></app-nav-bar>
+<!-- <button (click)="pop()">Display</button> -->
+<div *ngIf="popUp" class="parent">
+    <div *ngFor="let item of product" class="popup">
+        <h1>Delete</h1>
+        <h1>Are you sure you want to delete?</h1>
+        <div class="button">
+            <button class="Delete" style="background: red;color: white;" (click)="deleteCart(item)">
+                Delete
+            </button>
+            <button class="cancel" style="background: rgb(0, 187, 255); color: white;" (click)="pop()">
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>
+<h1 style="text-align: center;">Your Cart</h1>
+<div class="container">
+    <div class="content">
+        <div class="context" *ngFor="let item of product">
+            <p class="name-tag">Name: {{item.name}}</p>
+            <p>Price: {{item.price | currency}}</p>
+            <p>
+                Quantity
+                <button (click)="reduceQty(item)">-</button>
+                {{item.quantity}}
+                <button (click)="addQty(item)">+</button>
+            </p>
+            <p>Id{{item.productId}}</p>
+            <button (click)="deletePop(item)" class="clear" style="margin-left: 80px;">Delete</button>
+            <!-- <button (click)="pop">Delete</button> -->
+        </div>
+    </div>
+    <div class="summary">
+        <h1>Cart Summay
+            <br>
+        </h1>
+        <p>Total Quantity {{product.length}} </p>
+        <p>Total Price {{totalPrice | currency}}</p>
+        <p>Total Fee {{totalFee | currency}}</p>
+        <p> ToTal Amount to be paid {{totalPricePlusFee | currency}}</p>
+        <button (click)="clearCart()" class="clear">Clear Cart</button>
+    </div>
+</div>

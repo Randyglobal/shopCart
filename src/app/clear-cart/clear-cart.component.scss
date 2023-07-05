@@ -1,0 +1,27 @@
+p{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10%;
+    }
+    .button{
+        width: 17%;
+        // background: red;
+        height: 40px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        button{
+            padding: 8px ;
+            outline: none;
+            border: 1px solid rgb(201, 201, 201);
+            background: white;
+            cursor: pointer;
+            font-size: 17px;
+            border-radius: 6px;
+
+            &:hover{
+                color: rgb(47, 186, 255);
+            }
+        }
+    }
+

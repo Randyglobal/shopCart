@@ -1,0 +1,54 @@
+@media (max-width: 700px) {
+    .wrapper{
+        width: 90%;
+        height: 50px;
+        border-bottom: 1px solid black;
+        margin: 0px auto;
+    
+        button{
+            cursor: pointer;
+            padding: 9px;
+            font-size: 14px;
+            color: rgb(9, 140, 255);
+            background: white;
+            border: 1px solid rgb(206, 206, 206);
+            outline: none;
+            border-radius: 7px;
+            margin-top: 10px;
+            float: right;
+        }
+    }
+    
+    
+    .banner{
+        margin: 2.5% auto;
+        height: 30vh;
+        display: flex;
+        // background: red;
+    
+        .container{
+            text-align: center;
+            width: 250px;
+            height: 220px;
+            background: white;
+            box-shadow: 1px 1px 4px gray;
+            border-radius: 10px;
+            margin-left: 4.5rem;
+    
+            button{
+                cursor: pointer;
+                padding: 9px;
+                font-size: 14px;
+                color: rgb(9, 140, 255);
+                background: white;
+                border: 1px solid rgb(167, 167, 167);
+                outline: none;
+                border-radius: 7px;
+            }
+            img{
+              width: 100px;
+              height: 90px;
+            }
+        }
+    } 
+}

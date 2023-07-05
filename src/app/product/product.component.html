@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+<div class="wrapper">
+    <button routerLink="/view" (click)="getProducts()">View Card</button>
+</div>
+
+<div class="banner">
+
+    <div *ngFor="let items of product" class="container">
+        <h3>{{ items.name }}</h3>
+        <img [src]="items.img" [alt]="">
+        <h4>{{ items.price | currency }}</h4>
+
+        <!-- <p>{{ product.quantity }}</p> -->
+        <button type="button" (click)="addToCart(items)">Add To Cart</button>
+    </div>
+
+</div>
